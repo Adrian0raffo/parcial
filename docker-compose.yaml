@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: parcial
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: parcial
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
